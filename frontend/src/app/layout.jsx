@@ -1,4 +1,4 @@
- import './globals.css'
+import './globals.css'
 
 import { Inter } from 'next/font/google'
 import NavBar from '../components/NavBar'
@@ -16,23 +16,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-          {/* Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-KEWM2XDBSE`} 
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+      <head>
+        {/* Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-KEWM2XDBSE`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-KEWM2XDBSE');
               `,
-            }}
-          />
-        </Head>
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <NavBar />
         <main>{children}</main>

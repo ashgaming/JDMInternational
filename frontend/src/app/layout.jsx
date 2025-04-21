@@ -16,6 +16,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+          {/* Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-KEWM2XDBSE`} 
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-KEWM2XDBSE');
+              `,
+            }}
+          />
+        </Head>
       <body className={inter.className}>
         <NavBar />
         <main>{children}</main>

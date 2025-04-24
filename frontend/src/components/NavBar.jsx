@@ -38,7 +38,7 @@ const NavBar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-green-700">JDMInternational</span>
+            <span className="text-2xl font-bold text-green-700">TrueValue Global</span>
           </Link>
         </div>
         
@@ -55,7 +55,7 @@ const NavBar = () => {
               {link.title}
             </Link>
           ))}
-          <Button variant="accent" size="sm">Get a Quote</Button>
+          
         </nav>
         
         <Button

@@ -130,10 +130,10 @@ export default function ProductsPage() {
       </section>
 
       {/* Product Search & Filter */}
-      <section className="border-b py-8">
+      {/* <section className="border-b py-8">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
-            {/* Search Bar */}
+            {/* Search Bar * /}
             <div className="relative md:max-w-md md:flex-1">
               <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
               <input
@@ -143,7 +143,7 @@ export default function ProductsPage() {
               />
             </div>
             
-            {/* Filter Buttons */}
+            {/* Filter Buttons * /}
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" size="sm" className="flex items-center gap-1">
                 <Filter className="h-4 w-4" />
@@ -158,7 +158,7 @@ export default function ProductsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Products by Category */}
       {productCategories.map((category) => (
@@ -203,7 +203,7 @@ export default function ProductsPage() {
       ))}
 
       {/* Call to Action */}
-      <section className="bg-green-50 py-16 dark:bg-green-950/20">
+      {/* <section className="bg-green-50 py-16 dark:bg-green-950/20">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-md dark:bg-card">
             <h2 className="mb-4 text-2xl font-bold md:text-3xl">Need a Custom Solution?</h2>
@@ -218,7 +218,7 @@ export default function ProductsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

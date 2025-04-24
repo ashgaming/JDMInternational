@@ -87,8 +87,7 @@ export function ServicesSection() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">Our Export Services</h2>
           <p className="text-lg text-muted-foreground">
-            Comprehensive export solutions tailored to agricultural producers, ensuring seamless access to global markets.
-          </p>
+          Comprehensive export solutions tailored to producers, ensuring seamless access to global markets for all goods.          </p>
         </div>
         
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

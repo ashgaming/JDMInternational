@@ -10,94 +10,104 @@ export default function BlogPage() {
       title: "Global Agricultural Trade Trends for 2025",
       excerpt: "Explore the emerging patterns and market shifts that will define agricultural exports in the coming year.",
       image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
-      author: "Robert Johnson",
+      author: "Ashish",
       date: "April 15, 2025",
       category: "Market Insights",
       readTime: "8 min read"
     },
-    {
-      id: 2,
-      title: "Sustainable Packaging Solutions for Fresh Produce",
-      excerpt: "How innovative packaging technologies are extending shelf life while reducing environmental impact.",
-      image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
-      author: "Maria Garcia",
-      date: "April 3, 2025",
-      category: "Sustainability",
-      readTime: "6 min read"
-    },
-    {
-      id: 3,
-      title: "Navigating Export Regulations: A Comprehensive Guide",
-      excerpt: "Understanding the complex web of international trade regulations for agricultural exporters.",
-      image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
-      author: "David Chen",
-      date: "March 28, 2025",
-      category: "Regulations",
-      readTime: "10 min read"
-    }
+    // {
+    //   id: 2,
+    //   title: "Sustainable Packaging Solutions for Fresh Produce",
+    //   excerpt: "How innovative packaging technologies are extending shelf life while reducing environmental impact.",
+    //   image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
+    //   author: "Maria Garcia",
+    //   date: "April 3, 2025",
+    //   category: "Sustainability",
+    //   readTime: "6 min read"
+    // },
+    // {
+    //   id: 3,
+    //   title: "Navigating Export Regulations: A Comprehensive Guide",
+    //   excerpt: "Understanding the complex web of international trade regulations for agricultural exporters.",
+    //   image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
+    //   author: "David Chen",
+    //   date: "March 28, 2025",
+    //   category: "Regulations",
+    //   readTime: "10 min read"
+    // }
   ]
 
   const recentPosts = [
     {
-      id: 4,
-      title: "Climate Change Adaptation Strategies for Agricultural Exporters",
-      excerpt: "How forward-thinking producers are adapting to changing climate conditions to maintain export quality and consistency.",
-      image: "https://images.pexels.com/photos/408262/pexels-photo-408262.jpeg",
-      author: "Sarah Patel",
-      date: "March 22, 2025",
-      category: "Climate & Environment",
-      readTime: "7 min read"
-    },
-    {
-      id: 5,
-      title: "Digital Transformation in Agricultural Supply Chains",
-      excerpt: "Exploring how blockchain, IoT, and AI are revolutionizing transparency and efficiency in global agricultural trade.",
-      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg",
-      author: "Michael Wong",
-      date: "March 15, 2025",
-      category: "Technology",
-      readTime: "9 min read"
-    },
-    {
-      id: 6,
-      title: "Emerging Markets: Export Opportunities in Southeast Asia",
-      excerpt: "Analysis of growing demand for premium agricultural products in rapidly developing Southeast Asian economies.",
-      image: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg",
-      author: "Linda Nguyen",
-      date: "March 10, 2025",
+      id: 1,
+      title: "Global Agricultural Trade Trends for 2025",
+      excerpt: "Explore the emerging patterns and market shifts that will define agricultural exports in the coming year.",
+      image: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
+      author: "Ashish Alhat",
+      date: "April 15, 2025",
       category: "Market Insights",
       readTime: "8 min read"
     },
-    {
-      id: 7,
-      title: "Quality Control Best Practices for Agricultural Exports",
-      excerpt: "Essential systems and protocols to ensure consistent quality in agricultural products bound for international markets.",
-      image: "https://images.pexels.com/photos/2255801/pexels-photo-2255801.jpeg",
-      author: "James Wilson",
-      date: "March 5, 2025",
-      category: "Quality Assurance",
-      readTime: "6 min read"
-    },
-    {
-      id: 8,
-      title: "The Role of Trade Agreements in Agricultural Exports",
-      excerpt: "How recent trade deals are creating new opportunities and challenges for agricultural exporters.",
-      image: "https://images.pexels.com/photos/1181250/pexels-photo-1181250.jpeg",
-      author: "Robert Johnson",
-      date: "February 28, 2025",
-      category: "Policy & Trade",
-      readTime: "7 min read"
-    },
-    {
-      id: 9,
-      title: "Building Resilient Supply Chains for Agricultural Exports",
-      excerpt: "Strategies for developing robust supply chains that can withstand disruptions and ensure continuous market access.",
-      image: "https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg",
-      author: "Maria Garcia",
-      date: "February 22, 2025",
-      category: "Logistics",
-      readTime: "8 min read"
-    }
+    // {
+    //   id: 4,
+    //   title: "Climate Change Adaptation Strategies for Agricultural Exporters",
+    //   excerpt: "How forward-thinking producers are adapting to changing climate conditions to maintain export quality and consistency.",
+    //   image: "https://images.pexels.com/photos/408262/pexels-photo-408262.jpeg",
+    //   author: "Sarah Patel",
+    //   date: "March 22, 2025",
+    //   category: "Climate & Environment",
+    //   readTime: "7 min read"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Digital Transformation in Agricultural Supply Chains",
+    //   excerpt: "Exploring how blockchain, IoT, and AI are revolutionizing transparency and efficiency in global agricultural trade.",
+    //   image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg",
+    //   author: "Michael Wong",
+    //   date: "March 15, 2025",
+    //   category: "Technology",
+    //   readTime: "9 min read"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Emerging Markets: Export Opportunities in Southeast Asia",
+    //   excerpt: "Analysis of growing demand for premium agricultural products in rapidly developing Southeast Asian economies.",
+    //   image: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg",
+    //   author: "Linda Nguyen",
+    //   date: "March 10, 2025",
+    //   category: "Market Insights",
+    //   readTime: "8 min read"
+    // },
+    // {
+    //   id: 7,
+    //   title: "Quality Control Best Practices for Agricultural Exports",
+    //   excerpt: "Essential systems and protocols to ensure consistent quality in agricultural products bound for international markets.",
+    //   image: "https://images.pexels.com/photos/2255801/pexels-photo-2255801.jpeg",
+    //   author: "James Wilson",
+    //   date: "March 5, 2025",
+    //   category: "Quality Assurance",
+    //   readTime: "6 min read"
+    // },
+    // {
+    //   id: 8,
+    //   title: "The Role of Trade Agreements in Agricultural Exports",
+    //   excerpt: "How recent trade deals are creating new opportunities and challenges for agricultural exporters.",
+    //   image: "https://images.pexels.com/photos/1181250/pexels-photo-1181250.jpeg",
+    //   author: "Robert Johnson",
+    //   date: "February 28, 2025",
+    //   category: "Policy & Trade",
+    //   readTime: "7 min read"
+    // },
+    // {
+    //   id: 9,
+    //   title: "Building Resilient Supply Chains for Agricultural Exports",
+    //   excerpt: "Strategies for developing robust supply chains that can withstand disruptions and ensure continuous market access.",
+    //   image: "https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg",
+    //   author: "Maria Garcia",
+    //   date: "February 22, 2025",
+    //   category: "Logistics",
+    //   readTime: "8 min read"
+    // }
   ]
 
   const categories = [
@@ -126,10 +136,10 @@ export default function BlogPage() {
       </section>
 
       {/* Search & Categories */}
-      <section className="border-b py-8">
+      {/* <section className="border-b py-8">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            {/* Search */}
+            {/* Search * /}
             <div className="relative md:max-w-md md:flex-1">
               <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
               <input
@@ -139,7 +149,7 @@ export default function BlogPage() {
               />
             </div>
             
-            {/* Categories */}
+            {/* Categories * /}
             <div className="flex flex-wrap gap-2">
               {categories.slice(0, 5).map((category, index) => (
                 <Link 
@@ -155,7 +165,7 @@ export default function BlogPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Posts */}
       <section className="py-16">
@@ -280,7 +290,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-green-700 py-16 text-white">
+      {/* <section className="bg-green-700 py-16 text-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-3xl rounded-lg bg-white/10 p-8 backdrop-blur-sm">
             <div className="text-center">
@@ -306,7 +316,7 @@ export default function BlogPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

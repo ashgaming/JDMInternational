@@ -93,8 +93,8 @@ export function StatsSection() {
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
-      value: "15,000+",
-      label: "Metric Tons Exported Yearly",
+      value: "1,000+",
+      label: "Products",
     },
     {
       icon: <Award className="h-8 w-8" />,

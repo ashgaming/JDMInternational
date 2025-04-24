@@ -254,12 +254,12 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-5xl overflow-hidden rounded-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50766.63468745423!2d-121.99246145!3d37.5482697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc0d8ff70124b%3A0xa531d3a7753504d8!2sFremont%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1653661615011!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13694.901242419559!2d73.85276776822673!3d18.51354852499541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra%2C%20India!5e1!3m2!1sen!2sca!4v1745491929793!5m2!1sen!2sca"
               height="450"
               style={{ border: 0, width: "100%" }}
               allowFullScreen={false}
               loading="lazy"
-              title="AgroExport Headquarters Location"
+              title="TrueValue Global Headquarters Location"
             ></iframe>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import React, { useRef, useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 
 export function ProductsShowcase() {
@@ -107,7 +108,9 @@ export function ProductsShowcase() {
         
         <div className="mt-12 text-center">
           <Button variant="outline" size="lg">
+            <Link href="/products">
             View All Products
+            </Link>
           </Button>
         </div>
       </div>

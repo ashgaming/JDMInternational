@@ -7,9 +7,9 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-xl font-bold">JDMInternational</h3>
+            <h3 className="mb-4 text-xl font-bold">TrueValue Glabal</h3>
             <p className="mb-4 text-slate-300">
-              Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.
+              Your trusted partner in goods export solutions, connecting manifaculure to global markets since 2025.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-green-400" aria-label="Twitter">

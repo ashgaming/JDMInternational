@@ -7,8 +7,17 @@ import { Footer } from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'AgroExport - Global Agricultural Export Solutions',
-  description: 'Premium agricultural export services connecting farmers to global markets.',
+  title: 'TrueValue Global',
+  description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.',
+  keywords: 'agriculture, export, import, global trade, agricultural products, grains, cereals, pulses, nuts, seeds, spices',
+  authors: [{ name: 'TrueValue Global' }],
+  openGraph: {
+    title: 'TrueValue Global',
+    description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.',
+    url: 'https://truevalueglobal.com',
+    siteName: 'TrueValue Global',
+    
+  },
 }
 
 export default function RootLayout({
@@ -17,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-KEWM2XDBSE`}

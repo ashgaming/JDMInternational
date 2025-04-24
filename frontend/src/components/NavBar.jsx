@@ -86,7 +86,6 @@ const NavBar = () => {
                 {link.title}
               </Link>
             ))}
-            <Button variant="accent" onClick={() => setIsOpen(false)}>Get a Quote</Button>
           </nav>
         </div>
       )}

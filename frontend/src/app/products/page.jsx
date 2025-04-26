@@ -37,20 +37,6 @@ export default function ProductsPage() {
       name: "Fresh Fruits",
       products: [
         {
-          id: 4,
-          name: "Organic Citrus",
-          image: "https://images.pexels.com/photos/952360/pexels-photo-952360.jpeg",
-          description: "Fresh oranges, lemons, grapefruits, and specialty citrus fruits cultivated with organic farming practices.",
-          certifications: ["Organic", "Pesticide-Free"]
-        },
-        {
-          id: 5,
-          name: "Premium Berries",
-          image: "https://images.pexels.com/photos/70746/strawberries-red-fruit-royalty-free-70746.jpeg",
-          description: "Hand-picked strawberries, blueberries, and raspberries packed at peak ripeness for maximum flavor and shelf life.",
-          certifications: ["Sustainable", "Quality Assured"]
-        },
-        {
           id: 6,
           name: "Tropical Fruits",
           image: "https://images.pexels.com/photos/3746517/pexels-photo-3746517.jpeg",
@@ -63,13 +49,6 @@ export default function ProductsPage() {
       id: "vegetables",
       name: "Vegetables",
       products: [
-        {
-          id: 7,
-          name: "Fresh Greens",
-          image: "https://images.pexels.com/photos/1352252/pexels-photo-1352252.jpeg",
-          description: "Nutritious leafy vegetables including kale, spinach, and specialty salad varieties with extended shelf life.",
-          certifications: ["Organic", "Pesticide-Free"]
-        },
         {
           id: 8,
           name: "Root Vegetables",
@@ -90,13 +69,6 @@ export default function ProductsPage() {
       id: "specialty",
       name: "Specialty Products",
       products: [
-        {
-          id: 10,
-          name: "Premium Coffee",
-          image: "https://images.pexels.com/photos/34085/pexels-photo.jpg",
-          description: "Single-origin Arabica and Robusta coffee beans from sustainable plantations with distinctive flavor profiles.",
-          certifications: ["Fair Trade", "Organic"]
-        },
         {
           id: 11,
           name: "Exotic Spices",

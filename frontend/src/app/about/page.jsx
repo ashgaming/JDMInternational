@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { Briefcase, Users, HelpingHand, GraduationCap } from "lucide-react"
+import { Briefcase, Users, HelpingHand, GraduationCap, ChevronRight, Github, Linkedin, Twitter } from "lucide-react"
 
 export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      
+
       <section className="relative bg-slate-900 py-20 text-white md:py-28">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
@@ -33,14 +33,11 @@ export default function AboutPage() {
             <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">Our Story</h2>
             <div className="space-y-6 text-lg">
               <p>
-                Founded in 2005, AgroExport began with a simple mission: to help local farmers access global markets. What started as a small operation has grown into a leading agricultural export agency serving over 45 countries worldwide.
-              </p>
+                Founded in 2025, TrueValue Global, based in Pune, was established with a bold vision: to empower producers by connecting them to global markets. Our mission is to export any product, anywhere, with unmatched efficiency and reliability.              </p>
               <p>
-                Our founder, John Anderson, was a third-generation farmer who saw the untapped potential of international markets. After struggling to navigate complex export regulations himself, he established AgroExport to create a streamlined pathway for agricultural producers to sell their goods globally.
-              </p>
+                Our founder, Abhishek Kamble, recognized the challenges local businesses faced in navigating international trade. Drawing from his deep understanding of market dynamics, he created TrueValue Global to simplify the export process, offering a seamless pathway for producers to reach buyers worldwide.              </p>
               <p>
-                Today, we're proud to work with thousands of producers ranging from family farms to large cooperatives. Our team of export specialists, logistics experts, and market analysts work together to ensure seamless delivery of premium agricultural products to international buyers.
-              </p>
+                Today, TrueValue Global collaborates with a diverse range of producers, from small-scale artisans to large-scale manufacturers. Our dedicated team of export specialists, logistics professionals, and market analysts ensures that every product, regardless of origin or destination, is delivered with precision and care to meet the demands of global markets.              </p>
             </div>
           </div>
         </div>
@@ -100,61 +97,78 @@ export default function AboutPage() {
         </div>
       </section>
 
+
+
       {/* Team Section */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold md:text-4xl">Our Leadership Team</h2>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Meet the experienced professionals guiding our global operations.
-            </p>
-          </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                name: "Robert Johnson",
-                role: "CEO & Founder",
-                image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-                bio: "With over 25 years in agricultural exports, Robert leads our global strategy and operations."
-              },
-              {
-                name: "Maria Garcia",
-                role: "Chief Operations Officer",
-                image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
-                bio: "Maria oversees our complex logistics network, ensuring timely deliveries worldwide."
-              },
-              {
-                name: "David Chen",
-                role: "Head of Market Analysis",
-                image: "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg",
-                bio: "David's expertise in international markets helps our clients maximize their export potential."
-              },
-              {
-                name: "Sarah Patel",
-                role: "Quality Assurance Director",
-                image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg",
-                bio: "Sarah ensures all products meet the highest international standards and compliance requirements."
-              }
-            ].map((member, index) => (
-              <div key={index} className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-card">
-                <div className="aspect-[4/3] relative">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-1 text-xl font-bold">{member.name}</h3>
-                  <p className="mb-3 text-sm text-green-600 dark:text-green-400">{member.role}</p>
-                  <p className="text-muted-foreground">{member.bio}</p>
+
+        <section className="relative min-h-screen text-black overflow-hidden">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="mt-10 text-center">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl ">Our Leadership</h2>
+              <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+                Meet the experienced professionals guiding our global operations.
+              </p>
+            </div>
+            {/* Background gradient circles */}
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-green-600/20 rounded-full blur-3xl"></div>
+
+            {/* Content wrapper */}
+            <div className="relative min-h-screen flex items-center">
+              <div className="container mx-auto px-4">
+                <div className="grid lg:grid-cols-12 gap-12 items-center">
+                  {/* Image content - spans 5 columns on large screens */}
+                  <div className="lg:col-span-5 order-1 lg:order-none">
+                    <div className="relative max-w-md mx-auto lg:max-w-none">
+                      {/* Decorative elements */}
+                      <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-full opacity-10 blur-3xl"></div>
+                      <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-full opacity-75 blur-lg"></div>
+
+                      {/* Main image */}
+                      <div className="relative rounded-full overflow-hidden border border-white/10 aspect-square">
+                        <img
+                          src={'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}
+                          alt="Profile Picture"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+
+                      {/* Experience badge */}
+                      <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-500 p-1 rounded-2xl">
+                        <div className="px-6 py-4 bg-[#0A101D] rounded-xl text-white">
+                          <p className="text-sm font-medium">Experience</p>
+                          <p className="text-2xl font-bold">8+ Years</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:col-span-7 space-y-8 order-2 lg:order-none text-center lg:text-left">
+                    <div className="space-y-4">
+                      <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
+                        <span className="relative">
+                          <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
+                            Abhishek Kamble
+                          </span>
+                        </span>
+                      </h1>
+                      <h2 className="text-2xl lg:text-4xl text-black font-light">Founder And CEO</h2>
+                    </div>
+
+                    <p className="text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Crafting digital experiences that blend innovative design with cutting-edge technology.
+                    As the CEO and Founder of our export agency, let's transform your vision into reality.
+                    </p>
+
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        </section>
+
       </section>
     </>
   )

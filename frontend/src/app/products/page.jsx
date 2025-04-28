@@ -1,7 +1,11 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
 import { Tag, Filter, Search } from "lucide-react"
+import ProductInquiryForm from "../../components/ProductInquiryForm"
+import { useState } from "react"
+import { set } from "date-fns"
 
 export default function ProductsPage() {
   const productCategories = [
@@ -87,6 +91,9 @@ export default function ProductsPage() {
     }
   ]
 
+  const [isProductInquiryFormOpen, setProductInquiryFormOpen] = useState(false)
+  const [ProductInquiryData, setProductInquiryData] = useState(null)
+
   return (
     <>
       {/* Hero Section */}
@@ -132,12 +139,14 @@ export default function ProductsPage() {
         </div>
       </section> */}
 
+      { ProductInquiryData && <ProductInquiryForm product={ProductInquiryData} onClose={()=>setProductInquiryData(null)} />}
+
       {/* Products by Category */}
       {productCategories.map((category) => (
         <section key={category.id} id={category.id} className="py-16">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="mb-8 text-3xl font-bold">{category.name}</h2>
-            
+
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {category.products.map((product) => (
                 <div key={product.id} className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-xl dark:bg-card">
@@ -164,7 +173,10 @@ export default function ProductsPage() {
                       <Link href={`/products/${product.id}`}>
                         <Button variant="outline" size="sm">View Details</Button>
                       </Link>
-                      <Button variant="accent" size="sm">Request Quote</Button>
+                      <Button variant="accent" size="sm" onClick={()=>{
+                        setProductInquiryData(product.name)
+                        setProductInquiryFormOpen(!isProductInquiryFormOpen)}
+                        }>Request Quote</Button>
                     </div>
                   </div>
                 </div>

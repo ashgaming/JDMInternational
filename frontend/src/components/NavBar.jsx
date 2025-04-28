@@ -71,15 +71,15 @@ const NavBar = () => {
       
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed inset-0 top-16 z-50 bg-background md:hidden">
-          <nav className="flex h-full flex-col items-center justify-center space-y-8 p-8">
+        <div className="fixed inset-0 top-16 z-50 bg-background  md:hidden">
+          <nav className="flex h-auto flex-col items-center justify-center space-y-2 bg-white/80 p-2 border-t-2 border-green-700 backdrop-blur-md">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "text-xl font-medium transition-colors hover:text-green-700",
+                  "text-xl font-medium transition-colors border-b-2 w-full hover:text-green-700",
                   pathname === link.href ? "text-green-700" : "text-muted-foreground"
                 )}
               >

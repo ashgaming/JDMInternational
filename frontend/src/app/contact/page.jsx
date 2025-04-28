@@ -4,13 +4,14 @@ import { useState } from "react"
 import { Button } from "../../components/ui/button"
 import { Input } from "../../components/ui/input"
 import { Textarea } from "../../components/ui/textarea"
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Clock,
   Check
 } from "lucide-react"
+import { SubmitContactUsForm } from "../../hooks/use-form"
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -20,7 +21,7 @@ export default function ContactPage() {
     phone: "",
     message: ""
   })
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
@@ -32,22 +33,18 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormState({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        message: ""
-      })
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000)
-    }, 1500)
+
+
+    SubmitContactUsForm(formState)
+    setFormState({
+      name: "",
+      email: "",
+      company: "",
+      phone: "",
+      message: ""
+    })
+    setIsSubmitting(false)
+    setIsSubmitted(true)
   }
 
   return (
@@ -72,7 +69,7 @@ export default function ContactPage() {
               {/* Contact Information */}
               <div className="order-2 lg:order-1">
                 <h2 className="mb-6 text-2xl font-bold md:text-3xl">Get In Touch</h2>
-                
+
                 <div className="mb-8 space-y-6">
                   <div className="flex items-start">
                     <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
@@ -87,7 +84,7 @@ export default function ContactPage() {
                       </address>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                       <Mail className="h-6 w-6" />
@@ -106,7 +103,7 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                       <Phone className="h-6 w-6" />
@@ -121,7 +118,7 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                       <Clock className="h-6 w-6" />
@@ -134,7 +131,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="rounded-lg bg-slate-100 p-6 dark:bg-slate-800/50">
                   <h3 className="mb-3 font-semibold">International Offices</h3>
                   <p className="mb-4 text-sm text-muted-foreground">
@@ -143,11 +140,11 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
-              
+
               {/* Contact Form */}
               <div className="order-1 rounded-lg bg-white p-6 shadow-md dark:bg-card md:p-8 lg:order-2">
                 <h2 className="mb-6 text-2xl font-bold md:text-3xl">Send Us a Message</h2>
-                
+
                 {isSubmitted ? (
                   <div className="flex flex-col items-center justify-center rounded-lg bg-green-50 p-8 text-center dark:bg-green-900/20">
                     <div className="mb-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/50 dark:text-green-400">
@@ -189,7 +186,7 @@ export default function ContactPage() {
                         />
                       </div>
                     </div>
-                    
+
                     <div className="grid gap-4 md:grid-cols-2">
                       <div>
                         <label htmlFor="company" className="mb-2 block text-sm font-medium">
@@ -217,7 +214,7 @@ export default function ContactPage() {
                         />
                       </div>
                     </div>
-                    
+
                     <div>
                       <label htmlFor="message" className="mb-2 block text-sm font-medium">
                         Message*
@@ -232,10 +229,10 @@ export default function ContactPage() {
                         required
                       />
                     </div>
-                    
-                    <Button 
-                      type="submit" 
-                      variant="accent" 
+
+                    <Button
+                      type="submit"
+                      variant="accent"
                       className="w-full"
                       disabled={isSubmitting}
                     >

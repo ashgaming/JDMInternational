@@ -74,11 +74,11 @@ export function ServicesSection() {
       description: "Custom packaging solutions that preserve quality and comply with destination requirements.",
       icon: <PackageCheck className="h-8 w-8" />,
     },
-    {
-      title: "Market Analysis",
-      description: "Data-driven insights on market trends, pricing strategies, and growth opportunities.",
-      icon: <BarChart3 className="h-8 w-8" />,
-    },
+    // {
+    //   title: "Market Analysis",
+    //   description: "Data-driven insights on market trends, pricing strategies, and growth opportunities.",
+    //   icon: <BarChart3 className="h-8 w-8" />,
+    // },
   ]
 
   return (

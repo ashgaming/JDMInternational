@@ -61,34 +61,34 @@ export default function ServicesPage() {
         "Cost-effective consolidation services"
       ]
     },
-    {
-      id: "packaging",
-      title: "Packaging Services",
-      description: "Custom packaging solutions that preserve quality and comply with destination country requirements.",
-      icon: <PackageCheck className="h-12 w-12" />,
-      image: "https://images.pexels.com/photos/5025473/pexels-photo-5025473.jpeg",
-      benefits: [
-        "Climate-appropriate packaging development",
-        "Compliance with import country regulations",
-        "Sustainable packaging options",
-        "Private labeling and co-packing services",
-        "Shelf-life optimization technologies"
-      ]
-    },
-    {
-      id: "market-analysis",
-      title: "Market Analysis",
-      description: "Data-driven insights on market trends, pricing strategies, and growth opportunities to maximize export potential.",
-      icon: <BarChart3 className="h-12 w-12" />,
-      image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg",
-      benefits: [
-        "Competitive landscape assessment",
-        "Demand forecasting and trend analysis",
-        "Pricing strategy development",
-        "Market segmentation and targeting",
-        "ROI analysis and performance metrics"
-      ]
-    }
+    // {
+    //   id: "packaging",
+    //   title: "Packaging Services",
+    //   description: "Custom packaging solutions that preserve quality and comply with destination country requirements.",
+    //   icon: <PackageCheck className="h-12 w-12" />,
+    //   image: "https://images.pexels.com/photos/5025473/pexels-photo-5025473.jpeg",
+    //   benefits: [
+    //     "Climate-appropriate packaging development",
+    //     "Compliance with import country regulations",
+    //     "Sustainable packaging options",
+    //     "Private labeling and co-packing services",
+    //     "Shelf-life optimization technologies"
+    //   ]
+    // },
+    // {
+    //   id: "market-analysis",
+    //   title: "Market Analysis",
+    //   description: "Data-driven insights on market trends, pricing strategies, and growth opportunities to maximize export potential.",
+    //   icon: <BarChart3 className="h-12 w-12" />,
+    //   image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg",
+    //   benefits: [
+    //     "Competitive landscape assessment",
+    //     "Demand forecasting and trend analysis",
+    //     "Pricing strategy development",
+    //     "Market segmentation and targeting",
+    //     "ROI analysis and performance metrics"
+    //   ]
+    // }
   ]
 
   return (

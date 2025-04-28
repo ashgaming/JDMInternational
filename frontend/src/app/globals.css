@@ -79,3 +79,21 @@
    /* @apply bg-background text-foreground;*/
   }
 }
+
+
+/* Add this to your global CSS file, e.g., styles/global.css */
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Ensure the element is still scrollable */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}

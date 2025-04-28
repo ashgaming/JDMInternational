@@ -55,7 +55,7 @@ export default function ContactPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">Contact Us</h1>
             <p className="text-lg text-slate-300 md:text-xl">
-              Get in touch with our export specialists to discuss your agricultural export needs.
+              Get in touch with our export specialists to discuss your goods export needs.
             </p>
           </div>
         </div>

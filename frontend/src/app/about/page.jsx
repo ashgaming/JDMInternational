@@ -18,9 +18,9 @@ export default function AboutPage() {
         </div>
         <div className="container relative z-10 mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">About AgroExport</h1>
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">About TrueValue Global</h1>
             <p className="text-lg text-slate-300 md:text-xl">
-              Your trusted partner in global agricultural exports since 2005.
+              Your trusted partner in Indian Goods exports since 2025.
             </p>
           </div>
         </div>
@@ -136,10 +136,10 @@ export default function AboutPage() {
                       </div>
 
                       {/* Experience badge */}
-                      <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-500 p-1 rounded-2xl">
+                      <div className="scale-50 sm:scale-100 absolute -right-14 sm:-right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-500 p-1 rounded-2xl">
                         <div className="px-6 py-4 bg-[#0A101D] rounded-xl text-white">
                           <p className="text-sm font-medium">Experience</p>
-                          <p className="text-2xl font-bold">8+ Years</p>
+                          <p className="text-2xl font-bold">5+ Years</p>
                         </div>
                       </div>
                     </div>

@@ -127,9 +127,9 @@ export default function BlogPage() {
       <section className="bg-slate-900 py-20 text-white md:py-28">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">Agricultural Export Insights</h1>
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">Indian Goods Export Insights</h1>
             <p className="text-lg text-slate-300 md:text-xl">
-              Expert analysis, market trends, and practical advice for agricultural exporters.
+              Expert analysis, market trends, and practical advice for Indian exporters.
             </p>
           </div>
         </div>
@@ -283,9 +283,9 @@ export default function BlogPage() {
             ))}
           </div>
           
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <Button variant="outline" size="lg">Load More Articles</Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

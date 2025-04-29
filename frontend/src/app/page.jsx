@@ -4,7 +4,8 @@ import { ProductsShowcase } from "../components/ProductsShowcase";
 import { ServicesSection } from "../components/ServicesSection";
 import { StatsSection } from "../components/StatsSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
-import  ImageSection  from "../components/ImageSection";
+import ImageSection from "../components/ImageSection";
+import Corousel from "../components/Corousel";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       <ServicesSection />
       <ProductsShowcase />
       <ImageSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <CallToAction />
     </>
   )

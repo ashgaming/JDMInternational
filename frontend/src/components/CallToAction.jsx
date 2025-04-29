@@ -38,7 +38,7 @@ export function CallToAction() {
         }`}
       >
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-3xl font-bold md:text-4xl">Ready to Expand Your Agricultural Business Globally?</h2>
+          <h2 className="mb-6 text-3xl font-bold md:text-4xl">Ready to Expand Your Export Business Globally?</h2>
           <p className="mb-8 text-lg text-green-100">
             Join hundreds of agricultural producers who trust us with their export needs. 
             Get in touch today for a personalized export solution.

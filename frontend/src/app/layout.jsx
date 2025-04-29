@@ -16,7 +16,7 @@ export const metadata = {
     description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.',
     url: 'https://truevalueglobal.com',
     siteName: 'TrueValue Global',
-    
+
   },
 }
 
@@ -40,10 +40,16 @@ export default function RootLayout({
               `,
           }}
         />
+
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
+
       </head>
       <body className={inter.className}>
         <NavBar />
-        <main>{children}</main>
+        <main className='overflow-hidden'>{children}</main>
         <Footer />
       </body>
     </html>

@@ -70,19 +70,18 @@ export function ProductsShowcase() {
             Discover our premium agricultural exports sourced from trusted growers and producers worldwide.
           </p>
         </div>
-        
-        <div 
+
+        <div
           ref={productsRef}
           className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
         >
           {products.map((product, index) => (
-            <div 
+            <div
               key={product.id}
-              className={`group overflow-hidden rounded-lg bg-white shadow-md transition-all duration-700 hover:shadow-xl dark:bg-card ${
-                isVisible 
-                  ? "translate-y-0 opacity-100" 
+              className={`group overflow-hidden rounded-lg bg-white shadow-md transition-all duration-700 hover:shadow-xl dark:bg-card ${isVisible
+                  ? "translate-y-0 opacity-100"
                   : "translate-y-16 opacity-0"
-              }`}
+                }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="relative h-64 overflow-hidden">
@@ -92,24 +91,24 @@ export function ProductsShowcase() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="absolute bottom-0 left-0 w-full p-4 translate-y-full transition-transform duration-300 group-hover:translate-y-0">
-                  <Button variant="accent" size="sm" className="w-full">View Details</Button>
-                </div>
+
               </div>
-              <div className="p-4">
-                <span className="text-sm font-medium text-green-600 dark:text-green-400">{product.category}</span>
-                <h3 className="mb-2 text-xl font-bold">{product.name}</h3>
-                <p className="text-sm text-muted-foreground">{product.description}</p>
+              <div className="p-4 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                <span className="text-sm font-medium text-green-600 dark:text-green-400 text-center">
+                  {product.category}
+                </span>
+                <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white text-center">
+                  {product.name}
+                </h3>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <Button variant="outline" size="lg">
             <Link href="/products">
-            View All Products
+              View All Products
             </Link>
           </Button>
         </div>

@@ -71,23 +71,23 @@ const NavBar = () => {
       
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed inset-0 top-16 z-50 bg-background  md:hidden">
-          <nav className="flex h-auto flex-col items-center justify-center space-y-2 bg-white/80 p-2 border-t-2 border-green-700 backdrop-blur-md">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  "text-xl font-medium transition-colors border-b-2 w-full hover:text-green-700",
-                  pathname === link.href ? "text-green-700" : "text-muted-foreground"
-                )}
-              >
-                {link.title}
-              </Link>
-            ))}
-          </nav>
-        </div>
+        <div className="fixed inset-0 top-16 -z-10 bg-gradient-to-b from-background to-green-50/50 md:hidden">
+        <nav className="flex h-auto mt-16 flex-col items-center justify-center space-y-3 bg-white/90 p-4 border-t-2 border-green-800 shadow-lg backdrop-blur-xl transition-all duration-300 ease-in-out">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "text-xl font-semibold tracking-wide uppercase transition-all duration-200 ease-in-out w-full py-2 text-center border-b-2 border-transparent hover:border-green-600 hover:text-green-700 transform hover:scale-105",
+                pathname === link.href ? "text-green-800 border-green-800" : "text-gray-600"
+              )}
+            >
+              {link.title}
+            </Link>
+          ))}
+        </nav>
+      </div>
       )}
     </header>
   )

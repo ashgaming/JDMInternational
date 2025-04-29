@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "./ui/button"
 import Link from "next/link"
+import Corousel from "./Corousel"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -13,23 +14,17 @@ export function HeroSection() {
   }, [])
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden h-[90vh]">
       {/* Hero background */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://res.cloudinary.com/dsnrp2dlj/image/upload/v1745491369/s2ahuajeq8pdhpd1kkic.jpg"
-          alt="Agricultural fields"
-          fill
-          priority
-          className="object-cover brightness-50"
-        />
+      <div className="absolute inset-0 z-10">
+        <Corousel />
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-4 py-24 md:py-32 lg:py-40">
-        <div className="max-w-3xl">
+      <div className="container relative z-10 mx-auto px-4 py-10 md:py-32 lg:py-40">
+        <div className="max-w-3xl md:pl-4">
           <h1
-            className={`mb-6 text-4xl font-bold text-white transition-all duration-1000 md:text-5xl lg:text-6xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            className={`mb-6 text-3xl font-bold text-white transition-all duration-1000 md:text-5xl lg:text-6xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
           >
             <span className="text-green-400">Indian</span> Goods Export Solutions

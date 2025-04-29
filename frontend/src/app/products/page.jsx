@@ -6,6 +6,7 @@ import { Tag, Filter, Search } from "lucide-react"
 import ProductInquiryForm from "../../components/ProductInquiryForm"
 import { useState } from "react"
 import { set } from "date-fns"
+import ProductDetails from "../../components/ProductDetails"
 
 export default function ProductsPage() {
   const productCategories = [
@@ -18,21 +19,27 @@ export default function ProductsPage() {
           name: "Premium Wheat",
           image: "https://images.pexels.com/photos/326082/pexels-photo-326082.jpeg",
           description: "High-quality wheat varieties suitable for premium flour production, bread, pasta, and pastry applications.",
-          certifications: ["Organic", "Non-GMO"]
+          certifications: ["Organic", "Non-GMO"],
+          pricePer1000kg: 800,
+          unit: "metric ton" // $800 per 1000 kg
         },
         {
           id: 2,
           name: "Whole Grain Rice",
           image: "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg",
           description: "Nutrient-rich rice varieties including Basmati, Jasmine, and specialty types sourced from premier growing regions.",
-          certifications: ["Sustainable", "Quality Assured"]
+          certifications: ["Sustainable", "Quality Assured"],
+          pricePer1000kg: 1200,
+          unit: "metric ton" // $1,200 per 1000 kg, aligns with basmati export price
         },
         {
           id: 3,
           name: "Premium Barley",
           image: "https://images.pexels.com/photos/533982/pexels-photo-533982.jpeg",
           description: "Malting-grade and feed barley cultivated in optimal growing conditions for superior quality and yield.",
-          certifications: ["Non-GMO"]
+          certifications: ["Non-GMO"],
+          pricePer1000kg: 650,
+          unit: "metric ton" // $650 per 1000 kg
         }
       ]
     },
@@ -45,7 +52,9 @@ export default function ProductsPage() {
           name: "Tropical Fruits",
           image: "https://images.pexels.com/photos/3746517/pexels-photo-3746517.jpeg",
           description: "Exotic mangoes, papayas, dragon fruit, and other tropical varieties sourced from ideal growing environments.",
-          certifications: ["Farm Direct"]
+          certifications: ["Farm Direct"],
+          pricePer1000kg: 4000,
+          unit: "metric ton" // $4,000 per 1000 kg
         }
       ]
     },
@@ -58,14 +67,18 @@ export default function ProductsPage() {
           name: "Root Vegetables",
           image: "https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg",
           description: "Premium potatoes, carrots, and other root vegetables in various grades for retail and processing markets.",
-          certifications: ["Quality Assured"]
+          certifications: ["Quality Assured"],
+          pricePer1000kg: 1200,
+          unit: "metric ton" // $1,200 per 1000 kg
         },
         {
           id: 9,
           name: "Greenhouse Tomatoes",
           image: "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg",
           description: "Year-round supply of greenhouse-grown tomatoes in multiple varieties with consistent quality and flavor.",
-          certifications: ["Sustainable", "Non-GMO"]
+          certifications: ["Sustainable", "Non-GMO"],
+          pricePer1000kg: 3000,
+          unit: "metric ton" // $3,000 per 1000 kg
         }
       ]
     },
@@ -78,21 +91,27 @@ export default function ProductsPage() {
           name: "Exotic Spices",
           image: "https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg",
           description: "Carefully sourced spices including turmeric, cardamom, saffron, and unique blends for culinary applications.",
-          certifications: ["Pure Origin", "Quality Assured"]
+          certifications: ["Pure Origin", "Quality Assured"],
+          pricePer1000kg: 20000,
+          unit: "metric ton" // $20,000 per 1000 kg
         },
         {
           id: 12,
           name: "Specialty Nuts",
           image: "https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg",
           description: "Premium almonds, cashews, pistachios, and nut mixes for retail and ingredient applications.",
-          certifications: ["Organic", "Non-GMO"]
+          certifications: ["Organic", "Non-GMO"],
+          pricePer1000kg: 12000,
+          unit: "metric ton" // $12,000 per 1000 kg
         }
       ]
     }
-  ]
+  ];
 
   const [isProductInquiryFormOpen, setProductInquiryFormOpen] = useState(false)
   const [ProductInquiryData, setProductInquiryData] = useState(null)
+
+  const [ProductDetailsData, setProductDetailsData] = useState(null)
 
   return (
     <>
@@ -139,8 +158,8 @@ export default function ProductsPage() {
         </div>
       </section> */}
 
-      { ProductInquiryData && <ProductInquiryForm product={ProductInquiryData} onClose={()=>setProductInquiryData(null)} />}
-
+      {ProductInquiryData && <ProductInquiryForm product={ProductInquiryData} onClose={() => setProductInquiryData(null)} />}
+      { ProductDetailsData && <ProductDetails product={ProductDetailsData} onClose={() => setProductDetailsData(null)} />}
       {/* Products by Category */}
       {productCategories.map((category) => (
         <section key={category.id} id={category.id} className="py-16">
@@ -170,13 +189,16 @@ export default function ProductsPage() {
                     <h3 className="mb-2 text-xl font-bold">{product.name}</h3>
                     <p className="mb-4 text-muted-foreground">{product.description}</p>
                     <div className="flex justify-between">
-                      <Link href={`/products/${product.id}`}>
-                        <Button variant="outline" size="sm">View Details</Button>
-                      </Link>
-                      <Button variant="accent" size="sm" onClick={()=>{
+                      {/* <Link href={`/products/${product.id}`}>
+                      </Link> */}
+                      <Button variant="outline" size="sm" onClick={() => {
+                        setProductDetailsData(product)
+                      }}>View Details</Button>
+                      <Button variant="accent" size="sm" onClick={() => {
                         setProductInquiryData(product.name)
-                        setProductInquiryFormOpen(!isProductInquiryFormOpen)}
-                        }>Request Quote</Button>
+                        setProductInquiryFormOpen(!isProductInquiryFormOpen)
+                      }
+                      }>Request Quote</Button>
                     </div>
                   </div>
                 </div>

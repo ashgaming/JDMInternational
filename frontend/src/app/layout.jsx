@@ -41,6 +41,22 @@ export default function RootLayout({
           }}
         />
 
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XZTE1MJJ4M`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-XZTE1MJJ4M');
+              `,
+          }}
+        />
+
+
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 

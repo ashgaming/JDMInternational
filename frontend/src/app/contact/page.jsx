@@ -78,9 +78,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="mb-1 font-semibold">Our Headquarters</h3>
                       <address className="not-italic text-muted-foreground">
-                        123 Export Avenue<br />
-                        Farmington, CA 94538<br />
-                        United States
+                        West Avenue Building , Bremen Chowk, <br/>  opp. PMRDA, Aundh, Pune, Maharashtra 411067, <br/> India<br />
                       </address>
                     </div>
                   </div>
@@ -93,14 +91,14 @@ export default function ContactPage() {
                       <h3 className="mb-1 font-semibold">Email Us</h3>
                       <p className="text-muted-foreground">
                         <a href="mailto:info@agroexport.com" className="hover:text-green-600 dark:hover:text-green-400">
-                          info@agroexport.com
+                          info@truevalueglobal.com
                         </a>
                       </p>
-                      <p className="text-muted-foreground">
+                      {/* <p className="text-muted-foreground">
                         <a href="mailto:sales@agroexport.com" className="hover:text-green-600 dark:hover:text-green-400">
                           sales@agroexport.com
                         </a>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
 
@@ -111,15 +109,15 @@ export default function ContactPage() {
                     <div>
                       <h3 className="mb-1 font-semibold">Call Us</h3>
                       <p className="text-muted-foreground">
-                        Main: <a href="tel:+15551234567" className="hover:text-green-600 dark:hover:text-green-400">+1 (555) 123-4567</a>
+                        Main: <a href="tel:+919070121502" className="hover:text-green-600 dark:hover:text-green-400">+91 9070121502</a>
                       </p>
-                      <p className="text-muted-foreground">
+                      {/* <p className="text-muted-foreground">
                         Sales: <a href="tel:+15551234568" className="hover:text-green-600 dark:hover:text-green-400">+1 (555) 123-4568</a>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                       <Clock className="h-6 w-6" />
                     </div>
@@ -129,14 +127,13 @@ export default function ContactPage() {
                       <p className="text-muted-foreground">Saturday: 9:00 AM - 1:00 PM PST</p>
                       <p className="text-muted-foreground">Sunday: Closed</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="rounded-lg bg-slate-100 p-6 dark:bg-slate-800/50">
-                  <h3 className="mb-3 font-semibold">International Offices</h3>
+                  <h3 className="mb-3 font-semibold">Our Office</h3>
                   <p className="mb-4 text-sm text-muted-foreground">
-                    We have regional representatives in Europe, Asia, and South America.
-                    Contact our headquarters for international inquiries.
+                  Our office is located in India. Contact our headquarters for any inquiries.
                   </p>
                 </div>
               </div>
@@ -251,7 +248,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-5xl overflow-hidden rounded-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13694.901242419559!2d73.85276776822673!3d18.51354852499541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra%2C%20India!5e1!3m2!1sen!2sca!4v1745491929793!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.720926700906!2d73.81095357465317!3d18.563678267857096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3cf6fd485f%3A0x3807395fe0ddce1e!2sWest%20Avenue!5e1!3m2!1sen!2sca!4v1745991279843!5m2!1sen!2sca"
               height="450"
               style={{ border: 0, width: "100%" }}
               allowFullScreen={false}

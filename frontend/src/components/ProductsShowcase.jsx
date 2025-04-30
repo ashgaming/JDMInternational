@@ -20,17 +20,17 @@ export function ProductsShowcase() {
     },
     {
       id: 2,
-      name: "Organic Citrus",
+      name: "Organic Apples",
       category: "Fruits",
-      image: "https://images.pexels.com/photos/952360/pexels-photo-952360.jpeg",
-      description: "Fresh oranges, lemons, and grapefruits grown with organic farming practices.",
+      image: "https://images.pexels.com/photos/209339/pexels-photo-209339.jpeg",
+      description: "Crisp, juicy apples grown with organic farming practices."
     },
     {
       id: 3,
-      name: "Coffee Beans",
-      category: "Specialty",
-      image: "https://images.pexels.com/photos/34085/pexels-photo.jpg",
-      description: "Premium Arabica and Robusta coffee beans from sustainable plantations.",
+      name: "Carrots",
+      category: "Vegetable",
+      image: "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg",
+      description: "Fresh, organic carrots grown in nutrient-rich soil."
     },
     {
       id: 4,
@@ -72,38 +72,45 @@ export function ProductsShowcase() {
         </div>
 
         <div
-          ref={productsRef}
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {products.map((product, index) => (
-            <div
-              key={product.id}
-              className={`group overflow-hidden rounded-lg bg-white shadow-md transition-all duration-700 hover:shadow-xl dark:bg-card ${isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-16 opacity-0"
-                }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+  ref={productsRef}
+  className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 px-4 py-8 max-w-7xl mx-auto"
+>
+  {products.map((product, index) => (
+    <div
+      key={product.id}
+      className={`group relative overflow-hidden rounded-xl bg-gradient-to-br from-white/80 to-gray-100/80 dark:from-gray-900/80 dark:to-gray-800/80 shadow-lg backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+      }`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      {/* Image Container */}
+      <div className="relative h-72 w-full overflow-hidden">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      </div>
 
-              </div>
-              <div className="p-4 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                <span className="text-sm font-medium text-green-600 dark:text-green-400 text-center">
-                  {product.category}
-                </span>
-                <h3 className="mt-2 text-2xl font-bold text-gray-900 dark:text-white text-center">
-                  {product.name}
-                </h3>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Content Container */}
+      <div className="p-6 flex flex-col items-center justify-center text-center">
+        <span className="text-xs font-semibold uppercase tracking-wider text-amber-500 dark:text-amber-400">
+          {product.category}
+        </span>
+        <h3 className="mt-3 text-xl font-serif font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
+          {product.name}
+        </h3>
+        {/* Optional Price or CTA */}
+      </div>
+
+      {/* Decorative Border Effect */}
+      <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-amber-400/30 transition-all duration-500 pointer-events-none"></div>
+    </div>
+  ))}
+</div>
 
         <div className="mt-12 text-center">
           <Button variant="outline" size="lg">

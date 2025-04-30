@@ -42,9 +42,9 @@ export function Footer() {
               <li>
                 <Link href="/products" className="text-slate-300 hover:text-green-400">Products</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" className="text-slate-300 hover:text-green-400">Blog</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact" className="text-slate-300 hover:text-green-400">Contact</Link>
               </li>
@@ -81,7 +81,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-green-400" />
-                <span className="text-slate-300"> +91 xx xxxx xxxx </span>
+                <span className="text-slate-300"> +91 9070121502 </span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-green-400" />

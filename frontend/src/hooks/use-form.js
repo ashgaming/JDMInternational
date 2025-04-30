@@ -12,11 +12,8 @@ export async function SubmitProductInquiryForm(formData) {
             email: formData.email,
             phone: formData.phone,
             companyName: formData.companyName,
-            companyRegNumber: formData.companyRegNumber || 'Not provided',
-            address: formData.address,
-            city: formData.city,
             country: formData.country,
-            productName: formData.product || 'Not specified',
+            productName: formData.productName || 'Not specified',
             quantity: formData.quantity,
             unit: formData.unit,
             comments: formData.comments || 'None',
@@ -48,17 +45,17 @@ export async function SubmitContactUsForm(formData) {
     try {
         // Prepare email parameters
         const templateParams = {
-            fullName: formData.fullName,
+            fullName: formData.name,
             email: formData.email,
             phone: formData.phone,
-            companyName: formData.companyName,
-            comments: formData.comments || 'None',
+            companyName: formData.company,
+            comments: formData.message || 'None',
         };
 
         // Send email using EmailJS
         const response = await emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID,
             templateParams,
             process.env.NEXT_PUBLIC_EMAILJS_USER_ID
         );

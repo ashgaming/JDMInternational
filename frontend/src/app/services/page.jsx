@@ -159,7 +159,7 @@ export default function ServicesPage() {
                     alt={service.title}
                     width={600}
                     height={400}
-                    className="h-auto w-full object-cover"
+                    className="h-auto max-h-[400px] w-full object-cover"
                   />
                 </div>
               </div>
@@ -183,9 +183,6 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 
-                <Link href="/contact">
-                  <Button variant="accent">Request this Service</Button>
-                </Link>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const ProductInquiryForm = ({ product, onClose }) => {
     email: useRef(null),
     phone: useRef(null),
     companyName: useRef(null),
-    productName: useRef(null),
+    productName: useRef(product || null),
     country: useRef(null),
     quantity: useRef(null),
     unit: useRef(null),
@@ -23,7 +23,7 @@ const ProductInquiryForm = ({ product, onClose }) => {
       email: formRefs.email.current.value,
       phone: formRefs.phone.current.value,
       companyName: formRefs.companyName.current.value,
-      productName: formRefs.productName.current.value,
+      productName: formRefs.productName.current.value || product,
       country: formRefs.country.current.value,
       quantity: formRefs.quantity.current.value,
       unit: formRefs.unit.current.value,
@@ -121,6 +121,19 @@ const ProductInquiryForm = ({ product, onClose }) => {
                 required
                 className="w-full px-4 py-2.5 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 text-gray-900 font-['Inter'] text-sm bg-green-50/50 transition-all duration-200 placeholder-gray-400"
                 placeholder="ABC Corporation"
+                defaultValue=""
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-green-800 font-['Inter'] mb-1.5">
+                Country
+              </label>
+              <input
+                type="text"
+                ref={formRefs.country}
+                required
+                className="w-full px-4 py-2.5 border border-green-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 text-gray-900 font-['Inter'] text-sm bg-green-50/50 transition-all duration-200 placeholder-gray-400"
+                placeholder="India"
                 defaultValue=""
               />
             </div>

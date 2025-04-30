@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">Our Mission & Values</h2>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto max-w-5xl text-lg text-muted-foreground">
               Guided by principles that prioritize quality, sustainability, and partnership.
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
                       <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-full opacity-75 blur-lg"></div>
 
                       {/* Main image */}
-                      <div className="relative rounded-full overflow-hidden border border-white/10 aspect-square">
+                      <div className="relative rounded-full overflow-hidden border border-white/10 aspect-square mt-20 lg:mt-0">
                         <img
                           src={'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}
                           alt="Profile Picture"
@@ -157,7 +157,7 @@ export default function AboutPage() {
                       <h2 className="text-2xl lg:text-4xl text-black font-light">Founder And CEO</h2>
                     </div>
 
-                    <p className="text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    <p className="text-xl max-w-3xl mx-auto lg:mx-0 leading-relaxed pb-5 md:pb-0">
                     Crafting digital experiences that blend innovative design with cutting-edge technology.
                     As the CEO and Founder of our export agency, let's transform your vision into reality.
                     </p>

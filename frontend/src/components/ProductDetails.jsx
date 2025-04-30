@@ -54,18 +54,15 @@ const ProductDetails = ({ product, onClose }) => {
                   Product Specifications
                 </h2>
                 <ul className="space-y-2 text-sm">
-                  <li>
-                    <span className="font-medium">Variety:</span> Premium Matcha Green Tea
-                  </li>
-                  <li>
-                    <span className="font-medium">Origin:</span> Uji, Japan
-                  </li>
-                  <li>
-                    <span className="font-medium">Weight:</span> 100g (3.5oz)
-                  </li>
-                  <li>
-                    <span className="font-medium">Processing:</span> Stone-ground, Shade-grown
-                  </li>
+                  {
+                    product?.specifications?.map((spec, index) => {
+                      const [keys, value] = spec.split(':');
+                      return <li key={index} className="flex justify-between">
+                        <span className="font-medium">{keys}:</span>
+                        <span>{value}</span>
+                      </li>
+                    })
+                  }
                   {/* <li>
                     <span className="font-medium">Certifications:</span> USDA Organic, Non-GMO
                   </li> */}

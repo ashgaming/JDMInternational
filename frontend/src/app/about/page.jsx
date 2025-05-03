@@ -30,16 +30,65 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">Our Story</h2>
+            <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">Who We Are</h2>
             <div className="space-y-6 text-lg">
               <p>
-                Founded in 2025, TrueValue Global, based in Pune, was established with a bold vision: to empower producers by connecting them to global markets. Our mission is to export any product, anywhere, with unmatched efficiency and reliability.              </p>
+                TrueValue Global was founded in 2025 with a vision to become a leading exporter of premium Indian commodities to markets worldwide.
+              </p>
               <p>
-                Our founder, Abhishek Kamble, recognized the challenges local businesses faced in navigating international trade. Drawing from his deep understanding of market dynamics, he created TrueValue Global to simplify the export process, offering a seamless pathway for producers to reach buyers worldwide.              </p>
+                Based in India, we leverage cutting-edge logistics solutions to ensure timely and secure delivery of goods to clients across Asia, Europe, and the Americas.
+              </p>
+            </div>
+
+            <h2 className="my-6 text-center text-3xl font-bold md:text-4xl">Premium Product Range</h2>
+            <div className="space-y-6 text-lg">
               <p>
-                Today, TrueValue Global collaborates with a diverse range of producers, from small-scale artisans to large-scale manufacturers. Our dedicated team of export specialists, logistics professionals, and market analysts ensures that every product, regardless of origin or destination, is delivered with precision and care to meet the demands of global markets.              </p>
+                Our product portfolio includes high-quality agricultural produce and specialty goods, curated to meet the exacting standards of international buyers.              </p>
+              <p>
+                We maintain rigorous quality control at every stage of the supply chain to guarantee consistency and compliance with international regulations.              </p>
+            </div>
+
+            <h2 className="my-6 text-center text-3xl font-bold md:text-4xl">Why Choose Us</h2>
+            <h3 className="my-6 text-left text-xl font-bold md:text-2xl">Customer-First Approach</h3>
+            <div className="space-y-6 text-lg">
+              <p>
+                At TrueValue Global, customer satisfaction is our highest priority, and we strive to build long-term partnerships through transparent communication and personalized service.              </p>
+
+              <p> Our strategic partnerships with trusted producers and freight carriers allow us to offer competitive pricing without compromising on quality              </p>
+            </div>
+
+            <h2 className="my-6 text-center text-3xl font-bold md:text-4xl">Sustainability & Ethics</h2>
+            <h3 className="my-6 text-left text-xl font-bold md:text-2xl"> Responsible Sourcing </h3>
+            <div className="space-y-6 text-lg">
+              <p>
+                We adhere to sustainable and ethical sourcing practices to support local communities and protect the environment.
+              </p>
+
+              <p>
+                Our dedicated export specialists provide end-to-end support, from documentation and customs clearance to real-time shipment tracking.
+              </p>
+            </div>
+
+
+            <h2 className="my-6 text-center text-3xl font-bold md:text-4xl">Global Expertise</h2>
+            <h3 className="my-6 text-left text-xl font-bold md:text-2xl">Market Intelligence</h3>
+            <div className="space-y-6 text-lg">
+              <p>
+                By staying abreast of global market trends and regulatory changes, we proactively adapt our strategies to keep our clients ahead of the competition.
+              </p>
+            </div>
+
+
+            <h2 className="my-6 text-center text-3xl font-bold md:text-4xl">Get in Touch</h2>
+            <div className="space-y-6 text-lg">
+              <p>
+              Contact us today to discover how TrueValue Global can elevate your supply chain with reliable export solutions tailored to your business needs.              </p>
             </div>
           </div>
+
+
+
+
         </div>
       </section>
 
@@ -158,8 +207,8 @@ export default function AboutPage() {
                     </div>
 
                     <p className="text-xl max-w-3xl mx-auto lg:mx-0 leading-relaxed pb-5 md:pb-0">
-                    Crafting digital experiences that blend innovative design with cutting-edge technology.
-                    As the CEO and Founder of our export agency, let's transform your vision into reality.
+                      Crafting digital experiences that blend innovative design with cutting-edge technology.
+                      As the CEO and Founder of our export agency, let's transform your vision into reality.
                     </p>
 
                   </div>

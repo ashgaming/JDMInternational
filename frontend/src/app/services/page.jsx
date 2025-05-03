@@ -247,25 +247,45 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-4xl divide-y">
             {[
               {
-                question: "How do you ensure product quality during transit?",
-                answer: "We employ temperature-controlled containers, optimal packaging solutions, and continuous monitoring systems to maintain product quality throughout the entire logistics chain. Our partners are specialists in agricultural cargo handling with proven track records."
+                question: "How can I place an order with TrueValue Global?",
+                answer: "Simply fill out the order form on our Request a Quote page or email your requirements directly to info@truevalueglobal.com. Our team will confirm availability, pricing, and next steps within one business day."
               },
               {
-                question: "Which markets do you currently serve?",
-                answer: "We currently facilitate exports to over 45 countries across North America, Europe, Asia, the Middle East, and Australia. Our strongest presence is in high-value markets like the EU, UK, Japan, South Korea, UAE, and Singapore."
+                question: "What shipping methods do you offer?",
+                answer: "Sea freight (Full Container Load): Ideal for larger volumes, with transit times ranging from 2–8 weeks depending on destination and routing"
               },
               {
-                question: "What certifications do you help producers obtain?",
-                answer: "We assist with major international certifications including Global G.A.P., USDA Organic, EU Organic, ISO 22000, HACCP, Fair Trade, Non-GMO Project Verification, and various country-specific certifications required for entry into particular markets."
+                question: "what are the typical transit times?",
+                answer: "Air freight: Best for smaller, time-sensitive shipments, with transit times of 1–4 days to most markets  ."
               },
               {
-                question: "How long does the export process typically take?",
-                answer: "The timeline varies depending on the product type, destination market, and existing certifications. Generally, new exporters can expect 3-6 months for market entry preparation, while established exporters with proper documentation may see shipments commence within 4-6 weeks."
+                question: "How do you ensure product quality and freshness in transit?",
+                answer: "We partner with accredited labs and on-site inspectors for pre-shipment testing and grading, ensuring compliance with pesticide residue and microbial standards . All produce is packed and shipped under a continuous cold chain at –1.5 °C to +14 °C, with temperature logging and real-time alerts to prevent spoilage."
               },
               {
-                question: "Do you offer any financing options?",
-                answer: "Yes, we offer various trade financing solutions including letter of credit services, export factoring, and connections to export credit agencies. We also maintain relationships with agricultural lenders who specialize in international trade financing."
-              }
+                question: " What documentation and certifications do you provide with each shipment?",
+                answer: "Phytosanitary Certificates and Health Certificates as required by destination countries. FDA Export Documentation (for U.S. imports) and other sanitary/quality documents mandated by local authorities. "
+              },
+              {
+                question: "What payment terms and methods do you offer?",
+                answer: "We accept Letter of Credit, Advance Payment, and Open Account terms, tailored to the client’s history and order size. Payment can be made in USD, EUR, or INR via bank transfer, SWIFT, or trade finance instruments."
+              },
+              {
+                question: "What is the minimum order quantity and lead time for shipments?",
+                answer: "Sea freight orders typically start at one full container load (FCL), which maximizes cost-efficiency. Air freight orders can start from 100 kg, with total door-to-door lead times of 3–7 days "
+              },
+              {
+                question: "How do you ensure compliance with import regulations in destination markets?",
+                answer: "We monitor import alerts, residue tolerances, and labeling standards from bodies like the FDA and APEDA to prevent customs holds. Our team prepares and reviews all export permits, commercial invoices, and packing lists in accordance with FSIS/USDA guidelines when applicable  "
+              },
+              {
+                question: "How can I track my shipment once it’s dispatched?",
+                answer: "All clients receive real-time tracking links via our online portal, plus milestone email/SMS alerts for dispatch, in-transit, and delivery statuses."
+              },
+              {
+                question: "What support do you provide after delivery?",
+                answer: "Our after-sales team handles quality feedback, claims processing, and customs inquiries. You can reach them at support@truevalueglobal.com or via our 24/7 helpline."
+              },
             ].map((faq, index) => (
               <div key={index} className="py-6">
                 <h3 className="mb-3 text-xl font-bold">{faq.question}</h3>

@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const ProductDetails = ({ product, onClose }) => {
   return (
-    <div className="fixed inset-0 bg-transparent border-black flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative hide-scrollbar">
+    <div className="fixed inset-0 bg-transparent border-black shadow-2xl flex items-center justify-center z-50 p-4">
+      <div className="bg-white border-black border-1 shadow-2xs rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative hide-scrollbar">
         <div className="sticky top-0 bg-white z-10 p-6 border-b">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold text-green-800 font-['Inter']">
@@ -90,7 +90,7 @@ const ProductDetails = ({ product, onClose }) => {
           </div>
 
           {/* Additional Information Section */}
-          <div className="mt-6 bg-white rounded-lg shadow-md p-6">
+          {/* <div className="mt-6 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl font-semibold text-green-700 mb-4">
               Why Choose Our Green Tea?
             </h2>
@@ -117,7 +117,7 @@ const ProductDetails = ({ product, onClose }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

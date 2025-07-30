@@ -27,7 +27,7 @@ export function HeroSection() {
             className={`mb-6 text-3xl font-bold text-white transition-all duration-1000 md:text-5xl lg:text-6xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
           >
-            <span className="text-green-400">Indian</span> Goods Export Solutions
+            <span className="text-blue-400">Indian</span> Goods Export Solutions
           </h1>
 
           <p

@@ -70,7 +70,7 @@ export default function ProductsPage() {
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="mb-8 text-3xl font-bold">{category.name}</h2>
 
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {category.products.map((product) => (
                 <div key={product.id} className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-xl dark:bg-card">
                   <div className="relative aspect-[4/3] overflow-hidden">

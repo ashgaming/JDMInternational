@@ -30,7 +30,7 @@ export function CallToAction() {
   }, [])
 
   return (
-    <section className="bg-green-700 py-20 text-white">
+    <section className="bg-blue-700 py-20 text-white">
       <div 
         ref={ctaRef}
         className={`container mx-auto px-4 transition-all duration-1000 md:px-8 ${
@@ -45,7 +45,7 @@ export function CallToAction() {
           </p>
           <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
             <Link href="/contact">
-              <Button size="lg" className="bg-white text-green-700 hover:bg-green-50">
+              <Button size="lg" className="bg-white text-blue-700 hover:bg-green-50">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

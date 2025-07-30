@@ -9,7 +9,9 @@ import {
   Phone,
   MapPin,
   Clock,
-  Check
+  Check,
+  Code,
+  MessageCircle
 } from "lucide-react"
 import { SubmitContactUsForm } from "../../hooks/use-form"
 
@@ -19,7 +21,10 @@ export default function ContactPage() {
     email: "",
     company: "",
     phone: "",
-    message: ""
+    message: "",
+    productOfInterest: "",
+    hscCode: "",
+    quantity: ""
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -41,7 +46,10 @@ export default function ContactPage() {
       email: "",
       company: "",
       phone: "",
-      message: ""
+      message: "",
+      productOfInterest: "",
+      hscCode: "",
+      quantity: ""
     })
     setIsSubmitting(false)
     setIsSubmitted(true)
@@ -72,7 +80,7 @@ export default function ContactPage() {
 
                 <div className="mb-8 space-y-6">
                   <div className="flex items-start">
-                    <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                    <div className="mr-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
@@ -84,18 +92,18 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                    <div className="mr-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                       <Mail className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="mb-1 font-semibold">Email Us</h3>
                       <p className="text-muted-foreground">
-                        <a href="mailto:info@agroexport.com" className="hover:text-green-600 dark:hover:text-green-400">
+                        <a href="mailto:info@agroexport.com" className="hover:text-blue-600 dark:hover:text-blue-400">
                           info@truevalueglobal.com
                         </a>
                       </p>
                       {/* <p className="text-muted-foreground">
-                        <a href="mailto:sales@agroexport.com" className="hover:text-green-600 dark:hover:text-green-400">
+                        <a href="mailto:sales@agroexport.com" className="hover:text-blue-600 dark:hover:text-blue-400">
                           sales@agroexport.com
                         </a>
                       </p> */}
@@ -103,22 +111,39 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                    <div className="mr-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="mb-1 font-semibold">Call Us</h3>
                       <p className="text-muted-foreground">
-                        Main: <a href="tel:+919070121502" className="hover:text-green-600 dark:hover:text-green-400">+91 9070121502</a>
+                        Main: <a href="tel:+919070121502" className="hover:text-blue-600 dark:hover:text-blue-400">+91 9070121502</a>
                       </p>
                       {/* <p className="text-muted-foreground">
-                        Sales: <a href="tel:+15551234568" className="hover:text-green-600 dark:hover:text-green-400">+1 (555) 123-4568</a>
+                        Sales: <a href="tel:+15551234568" className="hover:text-blue-600 dark:hover:text-blue-400">+1 (555) 123-4568</a>
                       </p> */}
                     </div>
                   </div>
 
+                   <div className="flex items-start">
+                    <div className="mr-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                      <MessageCircle className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="mb-1 font-semibold">WhatsApp Chat</h3>
+                      <p className="text-muted-foreground">
+                        Chat: <a href="https://wa.me/+91 9070121502" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400">+91 9070121502</a>
+                      </p>
+                      {/* <p className="text-muted-foreground">
+                        Sales: <a href="tel:+15551234568" className="hover:text-blue-600 dark:hover:text-blue-400">+1 (555) 123-4568</a>
+                      </p> */}
+                    </div>
+                  </div>
+
+                   
+
                   {/* <div className="flex items-start">
-                    <div className="mr-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                    <div className="mr-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                       <Clock className="h-6 w-6" />
                     </div>
                     <div>
@@ -143,8 +168,8 @@ export default function ContactPage() {
                 <h2 className="mb-6 text-2xl font-bold md:text-3xl">Send Us a Message</h2>
 
                 {isSubmitted ? (
-                  <div className="flex flex-col items-center justify-center rounded-lg bg-green-50 p-8 text-center dark:bg-green-900/20">
-                    <div className="mb-4 rounded-full bg-green-100 p-3 text-green-700 dark:bg-green-900/50 dark:text-green-400">
+                  <div className="flex flex-col items-center justify-center rounded-lg bg-blue-50 p-8 text-center dark:bg-blue-900/20">
+                    <div className="mb-4 rounded-full bg-blue-100 p-3 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400">
                       <Check className="h-8 w-8" />
                     </div>
                     <h3 className="mb-2 text-xl font-bold">Message Sent!</h3>
@@ -208,6 +233,48 @@ export default function ContactPage() {
                           value={formState.phone}
                           onChange={handleChange}
                           placeholder="+1 (555) 123-4567"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <div>
+                        <label htmlFor="company" className="mb-2 block text-sm font-medium">
+                          Product of Interest
+                        </label>
+                        <Input
+                          id="productOfInterest"
+                          name="productOfInterest"
+                          value={formState.productOfInterest}
+                          onChange={handleChange}
+                          placeholder="e.g. Organic Green Tea"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="hsc-code" className="mb-2 block text-sm font-medium">
+                          HSC Code
+                        </label>
+                        <Input
+                          id="hsc-code"
+                          name="hscCode"
+                          type="text"
+                          value={formState.hscCode}
+                          onChange={handleChange}
+                          placeholder="e.g. 0902.10"
+                        />
+                      </div>
+
+                       <div>
+                        <label htmlFor="quantity" className="mb-2 block text-sm font-medium">
+                          Quantity in Kg
+                        </label>
+                        <Input
+                          id="quantity"
+                          name="quantity"
+                          type="number"
+                          value={formState.quantity}
+                          onChange={handleChange}
+                          placeholder="e.g. 1000"
                         />
                       </div>
                     </div>

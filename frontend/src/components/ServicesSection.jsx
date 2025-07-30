@@ -38,7 +38,7 @@ function ServiceCard({ title, description, icon, delay }) {
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="mb-4 rounded-full bg-green-100 p-3 text-green-700 transition-transform duration-300 group-hover:scale-110 dark:bg-green-900/30 dark:text-green-400">
+      <div className="mb-4 rounded-full bg-blue-100 p-3 text-blue-700 transition-transform duration-300 group-hover:scale-110 dark:bg-green-900/30 dark:text-blue-400">
         {icon}
       </div>
       <h3 className="mb-2 text-xl font-bold">{title}</h3>

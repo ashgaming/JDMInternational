@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'TrueValue Global',
-  description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.',
+  description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2025.',
   keywords: 'agriculture, export, import, global trade, agricultural products, grains, cereals, pulses, nuts, seeds, spices',
   authors: [{ name: 'TrueValue Global' }],
   openGraph: {
     title: 'TrueValue Global',
-    description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2005.',
+    description: 'Your trusted partner in agricultural export solutions, connecting farmers to global markets since 2025.',
     url: 'https://truevalueglobal.com',
     siteName: 'TrueValue Global',
 

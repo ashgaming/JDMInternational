@@ -38,7 +38,8 @@ const NavBar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-green-700">TrueValue Global</span>
+            <img src="https://res.cloudinary.com/dsnrp2dlj/image/upload/v1753850515/Delivers_Trust_Globally_q0pbd0.svg" alt="TrueValue Global Logo" className="h-15 w-15" />
+            <span className="text-2xl font-bold text-blue-700">TrueValue Global</span>
           </Link>
         </div>
         
@@ -48,8 +49,8 @@ const NavBar = () => {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-green-700",
-                pathname === link.href ? "text-green-700" : "text-muted-foreground"
+                "text-sm font-medium transition-colors hover:text-blue-700",
+                pathname === link.href ? "text-blue-700" : "text-muted-foreground"
               )}
             >
               {link.title}

@@ -132,7 +132,7 @@ export default function ServicesPage() {
                 href={`/services#${service.id}`}
                 className="group rounded-lg bg-white p-6 shadow-md transition-all hover:shadow-xl dark:bg-card"
               >
-                <div className="mb-4 rounded-full bg-green-100 p-3 text-green-700 transition-transform duration-300 group-hover:scale-110 dark:bg-green-900/30 dark:text-green-400">
+                <div className="mb-4 rounded-full bg-blue-100 p-3 text-blue-700 transition-transform duration-300 group-hover:scale-110 dark:bg-blue-900/30 dark:text-blue-400">
                   {service.icon}
                 </div>
                 <h3 className="mb-2 text-xl font-bold">{service.title}</h3>
@@ -165,7 +165,7 @@ export default function ServicesPage() {
               </div>
               
               <div>
-                <div className="mb-6 rounded-full bg-green-100 p-4 w-fit text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                <div className="mb-6 rounded-full bg-blue-100 p-4 w-fit text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                   {service.icon}
                 </div>
                 <h2 className="mb-4 text-3xl font-bold">{service.title}</h2>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                 <ul className="mb-8 space-y-3">
                   {service.benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-start">
-                      <CheckCircle2 className="mr-2 mt-1 h-5 w-5 text-green-600 dark:text-green-400" />
+                      <CheckCircle2 className="mr-2 mt-1 h-5 w-5 text-blue-600 dark:text-blue-400" />
                       <span>{benefit}</span>
                     </li>
                   ))}
@@ -190,11 +190,11 @@ export default function ServicesPage() {
       ))}
 
       {/* Process Section */}
-      <section className="bg-green-700 py-20 text-white">
+      <section className="bg-blue-700 py-20 text-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">Our Export Process</h2>
-            <p className="text-lg text-green-100">
+            <p className="text-lg text-blue-100">
               A systematic approach that ensures efficiency, compliance, and success at every stage of the export journey.
             </p>
           </div>
@@ -223,11 +223,11 @@ export default function ServicesPage() {
               }
             ].map((phase, index) => (
               <div key={index} className="rounded-lg bg-white/10 p-6 backdrop-blur-sm">
-                <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center text-green-700 font-bold text-xl">
+                <div className="mb-4 rounded-full bg-white w-12 h-12 flex items-center justify-center text-blue-700 font-bold text-xl">
                   {phase.step}
                 </div>
                 <h3 className="mb-2 text-xl font-bold">{phase.title}</h3>
-                <p className="text-green-100">{phase.description}</p>
+                <p className="text-blue-100">{phase.description}</p>
               </div>
             ))}
           </div>
@@ -306,13 +306,13 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
               <Link href="/contact">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                   Contact Our Team
                 </Button>
               </Link>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              {/* <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
                 Download Service Brochure
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

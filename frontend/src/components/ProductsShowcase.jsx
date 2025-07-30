@@ -97,17 +97,17 @@ export function ProductsShowcase() {
 
       {/* Content Container */}
       <div className="p-6 flex flex-col items-center justify-center text-center">
-        <span className="text-xs font-semibold uppercase tracking-wider text-amber-500 dark:text-amber-400">
+        <span className="text-xs font-semibold uppercase tracking-wider text-blue-500 dark:text-blue-400">
           {product.category}
         </span>
-        <h3 className="mt-3 text-xl font-serif font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
+        <h3 className="mt-3 text-xl font-serif font-semibold text-gray-900 dark:text-gray-300 tracking-tight">
           {product.name}
         </h3>
         {/* Optional Price or CTA */}
       </div>
 
       {/* Decorative Border Effect */}
-      <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-amber-400/30 transition-all duration-500 pointer-events-none"></div>
+      <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-blue-400/30 transition-all duration-500 pointer-events-none"></div>
     </div>
   ))}
 </div>

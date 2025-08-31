@@ -1,17 +1,13 @@
 "use client"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "../../components/ui/button"
-import { Tag, Filter, Search } from "lucide-react"
 import ProductInquiryForm from "../../components/ProductInquiryForm"
 import { useState } from "react"
-import { set } from "date-fns"
 import ProductDetails from "../../components/ProductDetails"
 import { productCategories } from "../../data/products"
 
 export default function ProductsPage() {
  
-
   const [isProductInquiryFormOpen, setProductInquiryFormOpen] = useState(false)
   const [ProductInquiryData, setProductInquiryData] = useState(null)
 

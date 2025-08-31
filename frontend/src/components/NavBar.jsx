@@ -38,8 +38,8 @@ const NavBar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <img src="https://res.cloudinary.com/dsnrp2dlj/image/upload/v1753850515/Delivers_Trust_Globally_q0pbd0.svg" alt="TrueValue Global Logo" className="h-15 w-15" />
-            <span className="text-2xl font-bold text-blue-700">TrueValue Global</span>
+            <img src="https://res.cloudinary.com/dsnrp2dlj/image/upload/v1754024655/Delivers_Trust_Globally_hepu7f.png" alt="TrueValue Global Logo" className="h-25 w-40 ml-20" />
+            {/* <span className="text-2xl font-bold text-blue-700">TrueValue Global</span> */}
           </Link>
         </div>
         

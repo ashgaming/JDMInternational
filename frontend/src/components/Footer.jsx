@@ -81,7 +81,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <PhoneCall className="mr-2 h-5 w-5 text-blue-400" />
-                <span className="text-slate-300"> +91 9070121502 </span>
+                <span className="text-slate-300"> +91  9970121502 </span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-blue-400" />
@@ -91,7 +91,7 @@ export function Footer() {
               </li>
 
               <li className="flex gap-4 items-center">
-                <a href="https://wa.me/+91 9070121502" target="_blank" className="text-slate-300 hover:text-blue-400">
+                <a href="https://wa.me/+919970121502" target="_blank" className="text-slate-300 hover:text-blue-400">
                 <MessageCircle className="mr-2 h-5 w-5 text-blue-400" />
                 </a>
 
